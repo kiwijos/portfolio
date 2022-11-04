@@ -3,9 +3,9 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Om mig
 ==========================
 
-The source for this page is in `content/index.md`.
+![En apa som äter en kiwi](%assets_url%/img/me.jpg "Me")
 
-This is a sample home page written in markdown with some frontmatter defined.
+Alex heter jag och bor i Oskarshamn. Programmera gör jag helst inbäddad i en filt med en kopp kaffe. Andra intressen är att gymma och laga god mat. Jag hittar gärna på saker tillsammans med min familj eller flickvännen. Ha det gott!
