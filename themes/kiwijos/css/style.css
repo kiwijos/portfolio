@@ -113,6 +113,11 @@ a.nav-toggle:hover, .footer a:hover {
     padding: 3em 3em 3em 0;
 }
 
+.logo img {
+    filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
+    width: 100px;
+}
+
 @media (max-width: 767px) {
     .title, .logo {
         padding: 1em 1em 1em 0;
@@ -132,6 +137,12 @@ a.nav-toggle:hover, .footer a:hover {
 
 .title p {
     font-style: italic;
+}
+
+/* Main */
+
+img[title=Me] {
+    width: 400px;
 }
 
 /* Footer */
