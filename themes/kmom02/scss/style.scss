@@ -6,15 +6,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
+@import 'base';
 @import 'blockquotes';
 @import 'code';
-
+@import 'test';
 @import 'mobile-menu';
-
-body {
-    background-color: $background-color;
-}
-
-* {
-    color: $font-color;
-}

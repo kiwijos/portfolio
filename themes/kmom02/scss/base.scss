@@ -1,0 +1,161 @@
+body {
+    background-color: $white;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header, .footer, .main {
+    padding: 14px 16px;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-gray;
+}
+
+/* Nav */
+
+.nav a {
+    color: $light-gray;
+    transition: color 0.1s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.nav a:hover {
+    color: $lime;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Border bottom swipe right animation */
+
+.nav a:hover::before {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.nav a::before {
+    content: "";
+    border-bottom: 2px solid $lime;
+    position: absolute;
+    inset: 0;
+    bottom: -6px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Burger menu button */
+
+a.nav-toggle, .footer a {
+    color: $light-gray;
+    transition: color 0.1s ease-in-out;
+}
+
+a.nav-toggle:hover, .footer a:hover {
+    color: $lime;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Title */
+
+.title, .logo {
+    padding: 3em 3em 3em 0;
+}
+
+.logo img {
+    filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
+    width: 100px;
+}
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: $white;
+    text-decoration: none;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Main */
+
+img[title=Me] {
+    width: 400px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: $medium-light-gray;
+    background-color: $dark-gray;
+    min-height: 200px;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
+/* Typografy */
+
+body {
+    color: $dark-gray;
+}
+
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}

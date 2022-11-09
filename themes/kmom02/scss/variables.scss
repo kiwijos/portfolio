@@ -1,5 +1,12 @@
-$font-color: #000;
-$font-alternative-color: #fff;
-$accent-color: #ee6c4d;
-$background-color: #3d5a80;
-$background-alternative-color: #e0fbfc;
+$black: #000;
+$dark-gray: #0D100C;
+$gray: #575757;
+$medium-light-gray: #A0A0A0;
+$light-gray: #E9E9E9;
+$white: #fff;
+$lime: #68FF5B;
+$red: #FD0101;
+
+$base-font-size: 1rem;
+$base-line-height: 1.4;
+$magic-number: $base-font-size * $base-line-height;
