@@ -11,3 +11,13 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'code';
 @import 'test';
 @import 'mobile-menu';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
