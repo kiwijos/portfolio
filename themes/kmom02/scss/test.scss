@@ -1,0 +1,25 @@
+@mixin basic-style {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    margin-bottom: $magic-number;
+    max-width: 67rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.old-fashioned {
+    @include basic-style;
+    font-style: italic;
+}
+
+.modern {
+    @include basic-style;
+    font-weight: 500;
+}
+
+.worst-ever {
+    font-size: .5rem;
+    font-weight: 900;
+    line-height: .5;
+    letter-spacing: -1px;
+}
