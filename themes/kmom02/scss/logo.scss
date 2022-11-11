@@ -1,0 +1,96 @@
+
+.title, .logo {
+    padding: 3em 3em 3em 0;
+}
+
+/* Overlay logo img (inside <a></a>) and svg text */
+
+.logo {
+    display: grid;
+    grid-template-areas: "logo";
+}
+
+.logo > a {
+    grid-area: logo;
+    display: block;
+    margin: auto
+}
+
+.logo svg {
+    grid-area: logo;
+    transform-origin: center;
+    fill: $white;
+}
+
+/* Filter img from black to white */
+
+.logo img {
+    filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
+    width: 84px;
+}
+
+/* Hover over spinning animation */
+
+.logo:hover {
+    svg {
+        animation: spin 30s linear infinite;
+    }
+    img {
+        animation: spin-reverse 30s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+/*
+.logo img:hover {
+    animation: shake .5s linear infinite;
+}
+
+@keyframes shake {
+    50%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-16deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(16deg) sclae(1.1);
+    }
+}*/
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: $white;
+    text-decoration: none;
+}
+
+.title p {
+    font-style: italic;
+}
