@@ -75,22 +75,6 @@ body {
     transition: transform 0.1s ease-in-out;
 }
 
-@mixin fa-pseudo {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-a.external::after {
-    @include fa-pseudo;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f35d";
-    margin-left: .2em;
-}
-
 /* Burger menu button */
 
 a.nav-toggle, .footer a {
@@ -101,38 +85,6 @@ a.nav-toggle, .footer a {
 a.nav-toggle:hover, .footer a:hover {
     color: $lime;
     transition: color 0.1s ease-in-out;
-}
-
-/* Title */
-
-.title, .logo {
-    padding: 3em 3em 3em 0;
-}
-
-.logo img {
-    filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
-    width: 100px;
-}
-
-@media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
-    }
-    .title {
-        min-width: 50%;
-    }
-    .logo {
-        max-width: 30%;
-    }
-}
-
-.title * {
-    color: $white;
-    text-decoration: none;
-}
-
-.title p {
-    font-style: italic;
 }
 
 /* Main */
