@@ -2,6 +2,23 @@
     <div class="site-header">
         {% if pages["_meta"].meta.logo %}
         <div class="logo">
+            <svg viewBox="0 0 100 100" width="150" height="150">
+                <!-- 
+                    Hide path with defs
+                    path for circle found online
+                -->
+                <defs>
+                <path id="circle"
+                    d="
+                      M 50, 50
+                      m -37, 0
+                      a 37,37 0 1,1 74,0
+                      a 37,37 0 1,1 -74,0"/>
+                </defs>
+                <text font-size="13">
+                    <textPath href="#circle">Kiwijos | Kiwijos | Kiwijos |</textPath>
+                </text>
+            </svg>
             <a href="{{ base_url }}">
                 <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
             </a>
