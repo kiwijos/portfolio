@@ -1,0 +1,35 @@
+
+/* No decoration by default */
+
+a {
+    text-decoration: none;
+}
+
+/* Required for Font Awesome icons in pseudo elements to display properly */
+
+@mixin fa-pseudo {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Select all outgoing anchor tags which are not buttons (i.e. icons) */
+
+a:not([href*="me/portfolio"]):not([role=button]) {
+    color: gray;
+    border-bottom: .1em solid $light-gray;
+
+    &:hover {
+        color: lime;
+    }
+    &::after {
+        @include fa-pseudo;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f35d"; /* outgoing arrow icon */
+        margin-left: .2em;
+        font-size: .86rem;
+    }
+}
