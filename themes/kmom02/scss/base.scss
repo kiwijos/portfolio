@@ -75,6 +75,22 @@ body {
     transition: transform 0.1s ease-in-out;
 }
 
+@mixin fa-pseudo {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.external::after {
+    @include fa-pseudo;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f35d";
+    margin-left: .2em;
+}
+
 /* Burger menu button */
 
 a.nav-toggle, .footer a {
