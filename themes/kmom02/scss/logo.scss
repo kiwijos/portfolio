@@ -1,32 +1,72 @@
 
-.title, .logo {
-    padding: 3em 3em 3em 0;
+/* Position elements inside header */
+
+.site-header {
+    position: relative; /* To position nav-toggle */
+    display: flex;
+    gap: $magic-number;
 }
 
-/* Overlay logo img (inside <a></a>) and svg text */
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Title and tagline text */
+
+.title * {
+    color: $white;
+}
+
+.title p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .title {
+        min-width: 50%;
+    }
+}
+
+/* Overlay logo img and svg text */
 
 .logo {
     display: grid;
     grid-template-areas: "logo";
-}
-
-.logo > a {
-    grid-area: logo;
-    display: block;
-    margin: auto
+    width: 6rem;
+    height: 6rem;
 }
 
 .logo svg {
+    /* Position */
     grid-area: logo;
-    transform-origin: center;
+    width: 100%;
+    height: 100%;
+
+    /* Style */
     fill: $white;
+    font-size: .8rem;
 }
 
-/* Filter img from black to white */
+.logo > a {
+    /* Posittion */
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
 
-.logo img {
+    /* Center img inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > a > img {
+    width: 50%;
+
+    /* Filter img from black to white */
     filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
-    width: 84px;
 }
 
 /* Hover over spinning animation */
@@ -35,7 +75,7 @@
     svg {
         animation: spin 30s linear infinite;
     }
-    img {
+    a > img {
         animation: spin-reverse 30s linear infinite;
     }
 }
@@ -56,41 +96,4 @@
     to {
         transform:rotate(-360deg);
     }
-}
-/*
-.logo img:hover {
-    animation: shake .5s linear infinite;
-}
-
-@keyframes shake {
-    50%, 100% {
-        transform: rotate(0deg) scale(1);
-    }
-    25% {
-        transform: rotate(-16deg) scale(1.1);
-    }
-    75% {
-        transform: rotate(16deg) sclae(1.1);
-    }
-}*/
-
-@media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 1em 1em 0;
-    }
-    .title {
-        min-width: 50%;
-    }
-    .logo {
-        max-width: 30%;
-    }
-}
-
-.title * {
-    color: $white;
-    text-decoration: none;
-}
-
-.title p {
-    font-style: italic;
 }
