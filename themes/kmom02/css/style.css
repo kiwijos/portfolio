@@ -6680,10 +6680,12 @@ body {
 }
 
 /* Images */
-/*
+/* stylelint-disable selector-no-qualifying-type */
 img[title=Me] {
-    width: 400px;
-}*/
+  width: 400px;
+}
+
+/* stylelint-enable selector-no-qualifying-type */
 img {
   max-width: 100%;
 }
