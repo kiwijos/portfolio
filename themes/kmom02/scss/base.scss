@@ -1,5 +1,5 @@
 body {
-    background-color: $white;
+    background-color: $light-gray;
 }
 
 ol, ul {
@@ -15,7 +15,7 @@ html, body {
 }
 
 .header, .footer, .main {
-    padding: 14px 16px;
+    padding: $magic-number;
 }
 
 /* Placement */
@@ -35,9 +35,12 @@ body {
 
 /* Header */
 
-.header, .site-header {
+.header {
     display: flex;
     justify-content: space-between;
+}
+
+.header, .footer {
     background-color: $dark-gray;
 }
 
@@ -51,7 +54,7 @@ body {
     z-index: 1;
 }
 
-.nav a:hover {
+.nav a:hover, .nav li.active a {
     color: $lime;
     transition: color 0.1s ease-in-out;
 }
@@ -99,12 +102,11 @@ img[title=Me] {
     display: flex;
     justify-content: space-between;
     color: $medium-light-gray;
-    background-color: $dark-gray;
     min-height: 200px;
 }
 
 .footer .social {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 /* Typografy */
