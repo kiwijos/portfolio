@@ -6,27 +6,25 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+
+@import 'fonts';
+@import 'typography';
+@import 'logo';
 @import 'base';
+@import 'links';
 @import 'blockquotes';
 @import 'code';
 @import 'test';
 @import 'mobile-menu';
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+/* Google fonts have been replaced with webfonts in fonts.scss
 
 * {
     font-family: 'Fira Code', monospace;
 }
 
-p {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    margin-bottom: $magic-number;
-    max-width: 67rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
+*/
