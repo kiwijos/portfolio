@@ -1,4 +1,3 @@
-
 /* No decoration by default */
 
 a {
@@ -30,12 +29,13 @@ a:not([href*="me/portfolio"]):not([role=button]) {
         @include fa-pseudo;
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        content: "\f35d"; /* outgoing arrow icon */
+        content: "\f35d"; /* Outgoing arrow icon */
         margin-left: .2em;
         font-size: .86rem;
     }
 
-    /* Brighter colors for links displayed over a dark background */
+    /* Use brighter colors for links displayed over a dark background */
+
     &.light {
         color: $medium-light-gray;
         border-bottom: .1em solid $gray;
