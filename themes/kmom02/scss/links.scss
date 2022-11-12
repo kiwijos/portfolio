@@ -18,30 +18,31 @@ a {
 
 /* Select all outgoing anchor tags which are not buttons (i.e. icons) */
 
-a:not([href*="me/portfolio"]):not([role=button]) {
-    color: gray;
-    border-bottom: .1em solid $medium-light-gray;
+a:not([href*='me/portfolio']):not([role=button]) {
+    color: $gray;
+    border-bottom: 0.1em solid $medium-light-gray;
 
     &:hover {
         color: $dark-gray;
     }
+
     &::after {
         @include fa-pseudo;
-        font-family: "Font Awesome 5 Free";
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
-        content: "\f35d"; /* Outgoing arrow icon */
-        margin-left: .2em;
-        font-size: .86rem;
+        content: '\f35d'; /* Outgoing arrow icon */
+        margin-left: 0.2em;
+        font-size: 0.86rem;
     }
+}
 
-    /* Use brighter colors for links displayed over a dark background */
+/* Use brighter colors for links displayed over a dark background */
 
-    &.light {
-        color: $medium-light-gray;
-        border-bottom: .1em solid $gray;
+.light:not([href*='me/portfolio']):not([role=button]) {
+    color: $medium-light-gray;
+    border-bottom: 0.1em solid $gray;
 
-        &:hover {
-            color: $light-gray;
-        }
+    &:hover {
+        color: $light-gray;
     }
 }

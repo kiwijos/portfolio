@@ -2,7 +2,8 @@ body {
     background-color: $light-gray;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 1.5em;
 }
 
@@ -10,11 +11,14 @@ ol, ul {
     display: none !important;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
-.header, .footer, .main {
+.header,
+.footer,
+.main {
     padding: $magic-number;
 }
 
@@ -29,7 +33,8 @@ body {
     flex: 1 0 auto;
 }
 
-.header, .footer {
+.header,
+.footer {
     flex: 0 0 auto;
 }
 
@@ -38,9 +43,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-}
-
-.header, .footer {
     background-color: $dark-gray;
 }
 
@@ -54,7 +56,8 @@ body {
     z-index: 1;
 }
 
-.nav a:hover, .nav li.active a {
+.nav a:hover,
+.nav .active a {
     color: $lime;
     transition: color 0.1s ease-in-out;
 }
@@ -67,7 +70,7 @@ body {
 }
 
 .nav a::before {
-    content: "";
+    content: '';
     border-bottom: 2px solid $lime;
     position: absolute;
     inset: 0;
@@ -78,22 +81,18 @@ body {
     transition: transform 0.1s ease-in-out;
 }
 
-/* Burger menu button */
+/* Burger menu button and footer icons */
 
-a.nav-toggle, .footer a {
+.nav-toggle,
+.footer a {
     color: $light-gray;
     transition: color 0.1s ease-in-out;
 }
 
-a.nav-toggle:hover, .footer a:hover {
+.nav-toggle:hover,
+.footer a:hover {
     color: $lime;
     transition: color 0.1s ease-in-out;
-}
-
-/* Main */
-
-img[title=Me] {
-    width: 400px;
 }
 
 /* Footer */
@@ -101,6 +100,7 @@ img[title=Me] {
 .footer {
     display: flex;
     justify-content: space-between;
+    background-color: $dark-gray;
     color: $medium-light-gray;
     min-height: 200px;
 }
@@ -108,6 +108,14 @@ img[title=Me] {
 .footer .social {
     font-size: 1.7rem;
 }
+
+/* Images */
+
+/* stylelint-disable selector-no-qualifying-type */
+img[title=Me] {
+    width: 400px;
+}
+/* stylelint-enable selector-no-qualifying-type */
 
 img {
     max-width: 100%;

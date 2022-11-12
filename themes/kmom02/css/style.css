@@ -6422,11 +6422,164 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-body {
-  background-color: #fff;
+/*
+* Webfonts generated using fontsquirrel.com
+*/
+@font-face {
+  font-family: "montserrat regular";
+  src: url("../../shared/fonts/montserrat-webfont.woff2") format("woff2"), url("../../shared/fonts/montserrat-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "vera mono";
+  src: url("../../shared/fonts/veramono-webfont.woff2") format("woff2"), url("../../shared/fonts/veramono-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "vera mono", monospace;
 }
 
-ol, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat regular", sans-serif;
+}
+
+body {
+  color: #0d100c;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.4rem;
+}
+
+p,
+pre,
+li,
+code {
+  max-width: 67rem;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}
+
+/* Position elements inside header */
+.site-header {
+  position: relative; /* To position nav-toggle */
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Title and tagline text */
+.title * {
+  color: #fff;
+}
+
+.title p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .title {
+    min-width: 50%;
+  }
+}
+/* Overlay logo img and svg text */
+.logo {
+  display: grid;
+  grid-template-areas: "logo";
+  width: 6rem;
+  height: 6rem;
+}
+
+.logo svg {
+  /* Position */
+  grid-area: logo;
+  width: 100%;
+  height: 100%;
+  /* Style */
+  fill: #fff;
+  font-size: 0.8rem;
+}
+
+.logo > a {
+  /* Posittion */
+  grid-area: logo;
+  width: 100%;
+  height: 100%;
+  /* Center img inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > a > img {
+  width: 50%;
+  /* Filter img from black to white */
+  filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
+}
+
+/* Hover over spinning animation */
+.logo:hover svg {
+  animation: spin 30s linear infinite;
+}
+.logo:hover a > img {
+  animation: spin-reverse 30s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+body {
+  background-color: #e9e9e9;
+}
+
+ol,
+ul {
   padding-left: 1.5em;
 }
 
@@ -6434,12 +6587,15 @@ ol, ul {
   display: none !important;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-.header, .footer, .main {
-  padding: 1.5rem;
+.header,
+.footer,
+.main {
+  padding: 1.4rem;
 }
 
 /* Placement */
@@ -6452,28 +6608,30 @@ body {
   flex: 1 0 auto;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
 /* Header */
-.header, .site-header {
+.header {
   display: flex;
   justify-content: space-between;
-  background-color: #0D100C;
+  background-color: #0d100c;
 }
 
 /* Nav */
 .nav a {
-  color: #E9E9E9;
+  color: #e9e9e9;
   transition: color 0.1s ease-in-out;
   text-decoration: none;
   position: relative;
   z-index: 1;
 }
 
-.nav a:hover {
-  color: #68FF5B;
+.nav a:hover,
+.nav .active a {
+  color: #68ff5b;
   transition: color 0.1s ease-in-out;
 }
 
@@ -6485,7 +6643,7 @@ body {
 
 .nav a::before {
   content: "";
-  border-bottom: 2px solid #68FF5B;
+  border-bottom: 2px solid #68ff5b;
   position: absolute;
   inset: 0;
   bottom: -6px;
@@ -6495,7 +6653,57 @@ body {
   transition: transform 0.1s ease-in-out;
 }
 
-a.external::after {
+/* Burger menu button and footer icons */
+.nav-toggle,
+.footer a {
+  color: #e9e9e9;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav-toggle:hover,
+.footer a:hover {
+  color: #68ff5b;
+  transition: color 0.1s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d100c;
+  color: #a0a0a0;
+  min-height: 200px;
+}
+
+.footer .social {
+  font-size: 1.7rem;
+}
+
+/* Images */
+/*
+img[title=Me] {
+    width: 400px;
+}*/
+img {
+  max-width: 100%;
+}
+
+/* No decoration by default */
+a {
+  text-decoration: none;
+}
+
+/* STYLE OUTGOING ANCHOR TAGS */
+/* Required for Font Awesome icons in pseudo elements to display properly */
+/* Select all outgoing anchor tags which are not buttons (i.e. icons) */
+a:not([href*="me/portfolio"]):not([role=button]) {
+  color: #575757;
+  border-bottom: 0.1em solid #a0a0a0;
+}
+a:not([href*="me/portfolio"]):not([role=button]):hover {
+  color: #0d100c;
+}
+a:not([href*="me/portfolio"]):not([role=button])::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -6503,87 +6711,18 @@ a.external::after {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f35d";
+  content: "\f35d"; /* Outgoing arrow icon */
   margin-left: 0.2em;
+  font-size: 0.86rem;
 }
 
-/* Burger menu button */
-a.nav-toggle, .footer a {
-  color: #E9E9E9;
-  transition: color 0.1s ease-in-out;
+/* Use brighter colors for links displayed over a dark background */
+.light:not([href*="me/portfolio"]):not([role=button]) {
+  color: #a0a0a0;
+  border-bottom: 0.1em solid #575757;
 }
-
-a.nav-toggle:hover, .footer a:hover {
-  color: #68FF5B;
-  transition: color 0.1s ease-in-out;
-}
-
-/* Title */
-.title, .logo {
-  padding: 3em 3em 3em 0;
-}
-
-.logo img {
-  filter: invert(99%) sepia(0%) saturate(1340%) hue-rotate(260deg) brightness(116%) contrast(100%);
-  width: 100px;
-}
-
-@media (max-width: 767px) {
-  .title, .logo {
-    padding: 1em 1em 1em 0;
-  }
-  .title {
-    min-width: 50%;
-  }
-  .logo {
-    max-width: 30%;
-  }
-}
-.title * {
-  color: #fff;
-  text-decoration: none;
-}
-
-.title p {
-  font-style: italic;
-}
-
-/* Main */
-img[title=Me] {
-  width: 400px;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: #A0A0A0;
-  background-color: #0D100C;
-  min-height: 200px;
-}
-
-.footer .social {
-  font-size: 2rem;
-}
-
-/* Typografy */
-body {
-  color: #0D100C;
-}
-
-p, td, th, li, dd {
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.6em;
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
+.light:not([href*="me/portfolio"]):not([role=button]):hover {
+  color: #e9e9e9;
 }
 
 blockquote {
@@ -6599,7 +6738,7 @@ code {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
-  font-family: monospace;
+  /*font-family: monospace;*/
   font-size: 0.85rem;
   line-height: 1.9824;
 }
@@ -6626,8 +6765,6 @@ pre code {
   line-height: 1.4;
   margin-bottom: 1.4rem;
   max-width: 67rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-style: italic;
 }
 
@@ -6636,8 +6773,6 @@ pre code {
   line-height: 1.4;
   margin-bottom: 1.4rem;
   max-width: 67rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-weight: 500;
 }
 
@@ -6696,19 +6831,13 @@ pre code {
     cursor: pointer;
   }
 }
-* {
-  font-family: "Fira Code", monospace;
-}
+/* Google fonts have been replaced with webfonts in fonts.scss
 
-p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 1.4rem;
-  max-width: 67rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+* {
+    font-family: 'Fira Code', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+*/

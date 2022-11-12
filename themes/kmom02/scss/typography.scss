@@ -8,17 +8,29 @@ p {
     margin-bottom: $magic-number;
 }
 
-p, pre, li, code {
+p,
+pre,
+li,
+code {
     max-width: 67rem;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
 }
