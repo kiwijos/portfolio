@@ -5,6 +5,8 @@ a {
     text-decoration: none;
 }
 
+/* STYLE OUTGOING ANCHOR TAGS */
+
 /* Required for Font Awesome icons in pseudo elements to display properly */
 
 @mixin fa-pseudo {
@@ -19,10 +21,10 @@ a {
 
 a:not([href*="me/portfolio"]):not([role=button]) {
     color: gray;
-    border-bottom: .1em solid $light-gray;
+    border-bottom: .1em solid $medium-light-gray;
 
     &:hover {
-        color: lime;
+        color: $dark-gray;
     }
     &::after {
         @include fa-pseudo;
@@ -31,5 +33,15 @@ a:not([href*="me/portfolio"]):not([role=button]) {
         content: "\f35d"; /* outgoing arrow icon */
         margin-left: .2em;
         font-size: .86rem;
+    }
+
+    /* Brighter colors for links displayed over a dark background */
+    &.light {
+        color: $medium-light-gray;
+        border-bottom: .1em solid $gray;
+
+        &:hover {
+            color: $light-gray;
+        }
     }
 }
