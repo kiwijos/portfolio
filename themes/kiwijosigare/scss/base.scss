@@ -1,0 +1,122 @@
+body {
+    background-color: $light-gray;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.header,
+.footer,
+.main {
+    padding: $magic-number;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-gray;
+}
+
+/* Nav */
+
+.nav a {
+    color: $light-gray;
+    transition: color 0.1s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.nav a:hover,
+.nav .active a {
+    color: $lime;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Border bottom swipe right animation */
+
+.nav a:hover::before {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.nav a::before {
+    content: '';
+    border-bottom: 2px solid $lime;
+    position: absolute;
+    inset: 0;
+    bottom: -6px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Burger menu button and footer icons */
+
+.nav-toggle,
+.footer a {
+    color: $light-gray;
+    transition: color 0.1s ease-in-out;
+}
+
+.nav-toggle:hover,
+.footer a:hover {
+    color: $lime;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-gray;
+    color: $medium-light-gray;
+    min-height: 200px;
+}
+
+.footer .social {
+    font-size: 1.7rem;
+}
+
+/* Images */
+
+/* stylelint-disable selector-no-qualifying-type */
+img[title=Me] {
+    width: 400px;
+}
+/* stylelint-enable selector-no-qualifying-type */
+
+img {
+    max-width: 100%;
+}
