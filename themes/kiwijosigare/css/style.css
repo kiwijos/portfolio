@@ -6834,7 +6834,7 @@ img {
   box-shadow: 1em 1em 0 0 var(--color);
   transition: all 0.15s ease-in;
 }
-.tech-box:hover, .tech-box:focus {
+.tech-box:hover {
   box-shadow: 0 0 0 0 var(--color);
   color: var(--color);
   animation: biggen 0.3s linear;
@@ -6871,15 +6871,21 @@ img {
   list-style: none;
   padding: 0;
 }
+.side-bar-col .active {
+  box-shadow: 0 0 0 0 #0d100c, inset 2em 2em 0 0 #0d100c;
+}
+.side-bar-col .active a {
+  color: #fff;
+}
 
 .side-bar-col li {
   background-color: transparent;
   margin-bottom: 1.4rem;
   border-radius: 4px;
   box-shadow: 0.3em 0.3em 0 0 #0d100c, inset 0 0 0 0 #0d100c;
-  transition: all 0.15s;
+  transition: box-shadow 0.15s;
 }
-.side-bar-col li:hover, .side-bar-col li.active {
+.side-bar-col li:hover {
   box-shadow: 0 0 0 0 #0d100c, inset 2em 2em 0 0 #0d100c;
 }
 .side-bar-col li a {
@@ -6887,8 +6893,9 @@ img {
   padding: 4px 6px;
   width: 100%;
   color: #0d100c;
+  transition: color 0.15s;
 }
-.side-bar-col li:hover a, .side-bar-col li.active a {
+.side-bar-col li:hover a {
   color: #fff;
 }
 

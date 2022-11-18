@@ -10,6 +10,14 @@
         list-style: none;
         padding: 0;
     }
+
+    .active {
+        box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
+    }
+
+    .active a {
+        color: $white;
+    }
 }
 
 .side-bar-col li {
@@ -17,10 +25,9 @@
     margin-bottom: $magic-number;
     border-radius: $base-border-radius;
     box-shadow: 0.3em 0.3em 0 0 $dark-gray, inset 0 0 0 0 $dark-gray;
-    transition: all 0.15s;
+    transition: box-shadow 0.15s;
     
-    &:hover,
-    &.active {
+    &:hover {
         box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
     }
 
@@ -29,10 +36,10 @@
         padding: 4px 6px;
         width: 100%;
         color: $dark-gray;
+        transition: color 0.15s;
     }
 
-    &:hover a,
-    &.active a {
+    &:hover a {
         color: $white;
     }
 }
