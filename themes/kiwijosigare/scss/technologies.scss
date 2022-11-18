@@ -83,8 +83,7 @@ sqlite: #1397d5
     
     // Add animation
 
-    &:hover,
-    &:focus {
+    &:hover {
         box-shadow: 0 0 0 0 var(--color);
         color: var(--color);
         animation: biggen 0.3s linear;
