@@ -4,6 +4,36 @@
 
 .side-bar-col {
     width: calc((100%/6));
+    padding-right: $magic-number;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.side-bar-col li {
+    background-color: transparent;
+    margin-bottom: $magic-number;
+    border-radius: $base-border-radius;
+    box-shadow: 0.3em 0.3em 0 0 $dark-gray, inset 0 0 0 0 $dark-gray;
+    transition: all 0.15s;
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
+    }
+
+    a {
+        display: block;
+        padding: 4px 6px;
+        width: 100%;
+        color: $dark-gray
+    }
+
+    &:hover a {
+        color: $white;
+    }
 }
 
 .main-col {

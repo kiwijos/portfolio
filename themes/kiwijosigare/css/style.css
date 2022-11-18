@@ -6757,6 +6757,7 @@ img {
   margin: 0 auto;
   display: grid;
   gap: 3em 3em;
+  margin-bottom: 3em;
   max-width: 960px;
   grid-template-areas: "title title title" "css html html" "js js php" "python python python" "git sqlite sqlite";
 }
@@ -6825,10 +6826,11 @@ img {
 
 .tech-box {
   position: relative;
-  height: 300px;
+  height: 6rem;
   padding: 1.4rem;
   background-color: #0d100c;
   color: #575757;
+  border-radius: 4px;
   box-shadow: 1em 1em 0 0 var(--color);
   transition: all 0.15s ease-in;
 }
@@ -6863,6 +6865,31 @@ img {
 
 .side-bar-col {
   width: 16.6666666667%;
+  padding-right: 1.4rem;
+}
+.side-bar-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-bar-col li {
+  background-color: transparent;
+  margin-bottom: 1.4rem;
+  border-radius: 4px;
+  box-shadow: 0.3em 0.3em 0 0 #0d100c, inset 0 0 0 0 #0d100c;
+  transition: all 0.15s;
+}
+.side-bar-col li:hover, .side-bar-col li:focus {
+  box-shadow: 0 0 0 0 #0d100c, inset 2em 2em 0 0 #0d100c;
+}
+.side-bar-col li a {
+  display: block;
+  padding: 4px 6px;
+  width: 100%;
+  color: #0d100c;
+}
+.side-bar-col li:hover a {
+  color: #fff;
 }
 
 .main-col {

@@ -2,6 +2,7 @@
     margin: 0 auto;
     display: grid;
     gap: 3em 3em;
+    margin-bottom: 3em;
     max-width: 960px;
     grid-template-areas:
     "title title title"
@@ -71,10 +72,11 @@ $colors: (
 
 .tech-box {
     position: relative;
-    height: 300px;
+    height: 6rem;
     padding: $magic-number;
     background-color: $dark-gray;
     color: $gray;
+    border-radius: $base-border-radius;
     box-shadow: 1em 1em 0 0 var(--color);
     transition: all 0.15s ease-in;
     
@@ -97,7 +99,9 @@ $colors: (
 }
 
 @keyframes biggen {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
         transform: scale(1);
     }
 
