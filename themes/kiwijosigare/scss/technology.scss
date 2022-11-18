@@ -20,7 +20,7 @@
     transition: all 0.15s;
     
     &:hover,
-    &:focus {
+    &.active {
         box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
     }
 
@@ -31,7 +31,8 @@
         color: $dark-gray;
     }
 
-    &:hover a {
+    &:hover a,
+    &.active a {
         color: $white;
     }
 }

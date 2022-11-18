@@ -7,7 +7,9 @@
             <div class="side-bar-col">
                 <ul>
                     {% for page in pages("technology") %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        <li{% if page.id==current_page.id %} class="active" {% endif %}>
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
                     {% endfor %}
                 </ul>
             </div>

@@ -6795,7 +6795,7 @@ img {
   grid-area: sqlite;
 }
 
-/* STYLE GRID ELEMENTS*/
+/* STYLE GRID ELEMENTS */
 .css {
   --color: #264de4;
 }
@@ -6879,7 +6879,7 @@ img {
   box-shadow: 0.3em 0.3em 0 0 #0d100c, inset 0 0 0 0 #0d100c;
   transition: all 0.15s;
 }
-.side-bar-col li:hover, .side-bar-col li:focus {
+.side-bar-col li:hover, .side-bar-col li.active {
   box-shadow: 0 0 0 0 #0d100c, inset 2em 2em 0 0 #0d100c;
 }
 .side-bar-col li a {
@@ -6888,7 +6888,7 @@ img {
   width: 100%;
   color: #0d100c;
 }
-.side-bar-col li:hover a {
+.side-bar-col li:hover a, .side-bar-col li.active a {
   color: #fff;
 }
 
