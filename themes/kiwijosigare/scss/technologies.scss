@@ -5,11 +5,11 @@
     margin-bottom: 3em;
     max-width: 960px;
     grid-template-areas:
-    "title title title"
-    "css html html"
-    "js js php"
-    "python python python"
-    "git sqlite sqlite";
+    'title title title'
+    'css html html'
+    'js js php'
+    'python python python'
+    'git sqlite sqlite';
 }
 
 /* POSITION GRID ELEMENTS */
@@ -46,25 +46,26 @@
     grid-area: sqlite;
 }
 
-/* STYLE GRID ELEMENTS*/
+/* STYLE GRID ELEMENTS */
 
-// Create a map of the boxes class names and matching colors (picked from the lanquages logos)
+// Create a map of the boxes class names and matching colors
+// (Colors are picked from the technologies respective logos)
 
 $colors: (
-    css: #264de4,
-    html: #e34c26,
-    js: #fcdc01,
-    php: #777bb3,
-    python: #4b8bbe,
-    git: #f1502f,
-    sqlite: #1397d5
+css: #264de4,
+html: #e34c26,
+js: #fcdc01,
+php: #777bb3,
+python: #4b8bbe,
+git: #f1502f,
+sqlite: #1397d5
 );
 
 // Loop through and make each color a custom property of the corresponding box
 
 @each $box, $color in $colors {
     .#{$box} {
-      --color: #{$color};
+        --color: #{$color};
     }
 }
 
@@ -113,15 +114,17 @@ $colors: (
 /* RESPONSIVENESS */
 
 @media screen and (max-width: 960px) {
+    // Make single column
+
     .tech-wrapper {
         grid-template-areas:
-        "title"
-        "css"
-        "html"
-        "js"
-        "php"
-        "python"
-        "git"
-        "sqlite";
+        'title'
+        'css'
+        'html'
+        'js'
+        'php'
+        'python'
+        'git'
+        'sqlite';
     }
 }
