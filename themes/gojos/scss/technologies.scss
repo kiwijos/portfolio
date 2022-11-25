@@ -1,0 +1,129 @@
+.tech-wrapper {
+    margin: 0 auto;
+    display: grid;
+    gap: 3em 3em;
+    margin-bottom: 3em;
+    max-width: 960px;
+    grid-template-areas:
+    'title title title'
+    'css html html'
+    'js js php'
+    'python python python'
+    'git sqlite sqlite';
+}
+
+/* POSITION GRID ELEMENTS */
+
+.tech-wrapper h1 {
+    grid-area: title;
+}
+
+.css {
+    grid-area: css;
+}
+
+.html {
+    grid-area: html;
+}
+
+.js {
+    grid-area: js;
+}
+
+.php {
+    grid-area: php;
+}
+
+.python {
+    grid-area: python;
+}
+
+.git {
+    grid-area: git;
+}
+
+.sqlite {
+    grid-area: sqlite;
+}
+
+/* STYLE GRID ELEMENTS */
+
+// Create a map of the boxes class names and matching colors
+// (Colors are picked from the technologies respective logos)
+
+$colors: (
+css: #264de4,
+html: #e34c26,
+js: #fcdc01,
+php: #777bb3,
+python: #4b8bbe,
+git: #f1502f,
+sqlite: #1397d5
+);
+
+// Loop through and make each color a custom property of the corresponding box
+
+@each $box, $color in $colors {
+    .#{$box} {
+        --color: #{$color};
+    }
+}
+
+// Having done that, we can reuse the same structure for all the boxes
+
+.tech-box {
+    position: relative;
+    height: 6rem;
+    padding: $magic-number;
+    background-color: $dark-gray;
+    color: $gray;
+    border-radius: $base-border-radius;
+    box-shadow: 1em 1em 0 0 var(--color);
+    transition: all 0.15s ease-in;
+    
+    // Add animation
+
+    &:hover {
+        box-shadow: 0 0 0 0 var(--color);
+        color: var(--color);
+        animation: biggen 0.3s linear;
+    }
+
+    // Overlay link to make whole box clickable
+
+    a {
+        display: block;
+        position: absolute;
+        inset: 0;
+    }
+}
+
+@keyframes biggen {
+    0%,
+    50%,
+    100% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.04);
+    }
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 960px) {
+    // Make single column
+
+    .tech-wrapper {
+        grid-template-areas:
+        'title'
+        'css'
+        'html'
+        'js'
+        'php'
+        'python'
+        'git'
+        'sqlite';
+    }
+}

@@ -1,0 +1,25 @@
+.kmom-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px dashed $medium-light-gray;
+    display: grid;
+    gap: 1em 1em;
+    text-align: center;
+}
+
+.kmom-wrapper h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-box {
+    border: 1px solid $gray;
+}
+
+.kmom-box:last-child {
+    grid-column: span 3;
+}
+
+.kmom-box:hover {
+    background-color: rgba($color: $black, $alpha: 0.2);
+}

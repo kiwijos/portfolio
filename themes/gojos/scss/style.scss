@@ -1,0 +1,33 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+
+@import 'fonts';
+@import 'typography';
+@import 'logo';
+@import 'links';
+@import 'base';
+@import 'report';
+@import 'technologies';
+@import 'technology';
+@import 'blockquotes';
+@import 'code';
+@import 'test';
+@import 'mobile-menu';
+
+/* Google fonts have been replaced with webfonts in fonts.scss
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+*/
