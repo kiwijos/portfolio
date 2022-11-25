@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "example": "kiwijosigare"
+    "example": "gojos"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass kiwijosigare/scss/style.scss:kiwijosigare/css/style.css kiwijosigare/scss/style-dark.scss:kiwijosigare/css/style-dark.css --no-source-map --watch",
-    "watch-min": "sass kiwijosigare/scss/style.scss:kiwijosigare/css/style.min.css kiwijosigare/scss/style-dark.scss:kiwijosigare/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "watch": "sass gojos/scss/style.scss:gojos/css/style.css gojos/scss/style-dark.scss:gojos/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass gojos/scss/style.scss:gojos/css/style.min.css gojos/scss/style-dark.scss:gojos/css/style-dark.min.css --no-source-map --watch --style compressed",
     "style": "npm run style-light && npm run style-dark",
     "style-min": "npm run style-light-min && npm run style-dark-min",
-    "style-dark": "sass kiwijosigare/scss/style-dark.scss kiwijosigare/css/style-dark.css --no-source-map",
-    "style-dark-min": "sass kiwijosigare/scss/style-dark.scss kiwijosigare/css/style-dark.min.css --no-source-map --style compressed",
-    "style-light": "sass kiwijosigare/scss/style.scss kiwijosigare/css/style.css --no-source-map",
-    "style-light-min": "sass kiwijosigare/scss/style.scss kiwijosigare/css/style.min.css --no-source-map --style compressed"
+    "style-dark": "sass gojos/scss/style-dark.scss gojos/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass gojos/scss/style-dark.scss gojos/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass gojos/scss/style.scss gojos/css/style.css --no-source-map",
+    "style-light-min": "sass gojos/scss/style.scss gojos/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
