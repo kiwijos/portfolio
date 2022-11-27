@@ -1,5 +1,5 @@
 ---
-Logo: image/kiwi_fruit.png
+Logo: image/logo.png
 Tagline: My portfolio.
 Social:
     - title: Länk till sidans github-repo

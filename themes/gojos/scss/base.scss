@@ -1,5 +1,5 @@
 body {
-    background-color: $light-gray;
+    background-color: $background-1;
 }
 
 ol,
@@ -18,7 +18,8 @@ body {
 
 .header,
 .footer,
-.main {
+.main,
+.article {
     padding: $magic-number;
 }
 
@@ -33,6 +34,12 @@ body {
     flex: 1 0 auto;
 }
 
+.article {
+    background-color: $background-5;
+    max-width: 67rem;
+    margin: 0 auto;
+}
+
 .header,
 .footer {
     flex: 0 0 auto;
@@ -43,13 +50,13 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: $dark-gray;
+    background-color: $background-5;
 }
 
 /* Nav */
 
 .nav a {
-    color: $light-gray;
+    color: $font-color-3;
     transition: color 0.1s ease-in-out;
     text-decoration: none;
     position: relative;
@@ -58,7 +65,7 @@ body {
 
 .nav a:hover,
 .nav .active a {
-    color: $lime;
+    color: $accent-1;
     transition: color 0.1s ease-in-out;
 }
 
@@ -71,7 +78,7 @@ body {
 
 .nav a::before {
     content: '';
-    border-bottom: 2px solid $lime;
+    border-bottom: 2px solid $accent-1;
     position: absolute;
     inset: 0;
     bottom: -6px;
@@ -85,13 +92,13 @@ body {
 
 .nav-toggle,
 .footer a {
-    color: $light-gray;
+    color: $font-color-3;
     transition: color 0.1s ease-in-out;
 }
 
 .nav-toggle:hover,
 .footer a:hover {
-    color: $lime;
+    color: $accent-2;
     transition: color 0.1s ease-in-out;
 }
 
@@ -100,8 +107,8 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: $dark-gray;
-    color: $medium-light-gray;
+    background-color: $background-3;
+    color: $font-color-3;
     min-height: 200px;
 }
 

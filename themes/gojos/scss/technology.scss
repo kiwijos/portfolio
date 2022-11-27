@@ -12,11 +12,11 @@
     }
 
     .active {
-        box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
+        box-shadow: 0 0 0 0 $background-2, inset 2em 2em 0 0 $background-2;
     }
 
     .active a {
-        color: $white;
+        color: $font-color-1;
     }
 }
 
@@ -24,23 +24,24 @@
     background-color: transparent;
     margin-bottom: $magic-number;
     border-radius: $base-border-radius;
-    box-shadow: 0.3em 0.3em 0 0 $dark-gray, inset 0 0 0 0 $dark-gray;
+    box-shadow: 0.3em 0.3em 0 0 $background-2, inset 0 0 0 0 $background-2;
     transition: box-shadow 0.15s;
+    border: 0.1em solid $background-2;
     
     &:hover {
-        box-shadow: 0 0 0 0 $dark-gray, inset 2em 2em 0 0 $dark-gray;
+        box-shadow: 0 0 0 0 $background-2, inset 2em 2em 0 0 $background-2;
     }
 
     a {
         display: block;
         padding: 4px 6px;
         width: 100%;
-        color: $dark-gray;
+        color: $font-color-1;
         transition: color 0.15s;
     }
 
     &:hover a {
-        color: $white;
+        color: $font-color-1;
     }
 }
 
@@ -50,7 +51,7 @@
 
 /* RESPONSIVENESS */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 67rem) {
     .side-bar-col {
         display: none;
     }

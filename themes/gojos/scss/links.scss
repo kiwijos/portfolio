@@ -2,6 +2,7 @@
 
 a {
     text-decoration: none;
+    color: $accent-1;
 }
 
 /* STYLE OUTGOING ANCHOR TAGS */
@@ -19,11 +20,11 @@ a {
 /* Select all outgoing anchor tags which are not buttons (i.e. icons) */
 
 a:not([href*='me/portfolio']):not([role=button]) {
-    color: $gray;
-    border-bottom: 0.1em solid $medium-light-gray;
+    color: $font-color-3;
+    border-bottom: 0.1em dotted $font-color-3;
 
     &:hover {
-        color: $dark-gray;
+        color: $font-color-1;
     }
 
     &::after {
@@ -39,10 +40,10 @@ a:not([href*='me/portfolio']):not([role=button]) {
 /* Use brighter colors for links displayed over a dark background */
 
 .light:not([href*='me/portfolio']):not([role=button]) {
-    color: $medium-light-gray;
-    border-bottom: 0.1em solid $gray;
+    color: $font-color-3;
+    border-bottom: 0.1em dotted $font-color-3;
 
     &:hover {
-        color: $light-gray;
+        color: $accent-2;
     }
 }

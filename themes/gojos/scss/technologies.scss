@@ -3,7 +3,7 @@
     display: grid;
     gap: 3em 3em;
     margin-bottom: 3em;
-    max-width: 960px;
+    max-width: 67rem;
     grid-template-areas:
     'title title title'
     'css html html'
@@ -75,8 +75,8 @@ sqlite: #1397d5
     position: relative;
     height: 6rem;
     padding: $magic-number;
-    background-color: $dark-gray;
-    color: $gray;
+    background-color: $background-3;
+    color: $font-color-3;
     border-radius: $base-border-radius;
     box-shadow: 1em 1em 0 0 var(--color);
     transition: all 0.15s ease-in;

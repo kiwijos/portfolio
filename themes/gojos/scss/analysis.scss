@@ -1,0 +1,50 @@
+.color-image-container {
+    display: flex;
+    max-width: 67rem;
+    gap: $magic-number;
+
+    > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        background-color: $background-4;
+        background-image: radial-gradient($background-1 20%, transparent 10%);
+        background-size: 4px 4px;
+        padding: $magic-number;
+        //box-shadow: 0.8em 0.8em 12px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+}
+
+.color-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: fit-content;
+
+    td {
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+
+    td:hover::after {
+        content: attr(data-color);
+        color: $background-4;
+        text-shadow: -1px 0 $font-color-1, 0 1px $font-color-1, 1px 0 $font-color-1, 0 -1px $font-color-1;
+        position: absolute;
+        inset: 0;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .color-image-container {
+        flex-direction: column;
+    }
+}

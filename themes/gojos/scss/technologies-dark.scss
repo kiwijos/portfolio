@@ -1,0 +1,104 @@
+.tech-wrapper {
+    margin: 0 auto;
+    display: grid;
+    gap: 3em 3em;
+    margin-bottom: 3em;
+    max-width: 67rem;
+    grid-template-areas:
+    'title title title'
+    'css html html'
+    'js js php'
+    'python python python'
+    'git sqlite sqlite';
+}
+
+/* POSITION GRID ELEMENTS */
+
+.tech-wrapper h1 {
+    grid-area: title;
+}
+
+.css {
+    grid-area: css;
+}
+
+.html {
+    grid-area: html;
+}
+
+.js {
+    grid-area: js;
+}
+
+.php {
+    grid-area: php;
+}
+
+.python {
+    grid-area: python;
+}
+
+.git {
+    grid-area: git;
+}
+
+.sqlite {
+    grid-area: sqlite;
+}
+
+.tech-box {
+    position: relative;
+    height: 6rem;
+    padding: $magic-number;
+    background-color: $background-3;
+    color: $font-color-3;
+    border-radius: $base-border-radius;
+    box-shadow: 1em 1em 0 0 $font-color-1;
+    transition: all 0.15s ease-in;
+    
+    // Add animation
+
+    &:hover {
+        box-shadow: 0 0 0 0 $font-color-1;
+        color: $font-color-1;
+        animation: biggen 0.3s linear;
+    }
+
+    // Overlay link to make whole box clickable
+
+    a {
+        display: block;
+        position: absolute;
+        inset: 0;
+    }
+}
+
+@keyframes biggen {
+    0%,
+    50%,
+    100% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.04);
+    }
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 960px) {
+    // Make single column
+
+    .tech-wrapper {
+        grid-template-areas:
+        'title'
+        'css'
+        'html'
+        'js'
+        'php'
+        'python'
+        'git'
+        'sqlite';
+    }
+}

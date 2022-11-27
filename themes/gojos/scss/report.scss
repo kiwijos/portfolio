@@ -1,7 +1,6 @@
 .kmom-wrapper {
     max-width: 960px;
     margin: 0 auto;
-    border: 1px dashed $medium-light-gray;
     display: grid;
     gap: 1em 1em;
     text-align: center;
@@ -13,7 +12,7 @@
 }
 
 .kmom-box {
-    border: 1px solid $gray;
+    border: 0.1em solid $font-color-1;
 }
 
 .kmom-box:last-child {
@@ -21,5 +20,5 @@
 }
 
 .kmom-box:hover {
-    background-color: rgba($color: $black, $alpha: 0.2);
+    background-color: rgba($color: $font-color-1, $alpha: 0.2);
 }
