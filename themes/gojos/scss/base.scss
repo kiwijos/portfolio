@@ -35,7 +35,7 @@ body {
 }
 
 .article {
-    background-color: $background-5;
+    background-color: $background-3;
     max-width: 67rem;
     margin: 0 auto;
 }
@@ -50,7 +50,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: $background-5;
+    background-color: $background-3;
 }
 
 /* Nav */
@@ -114,16 +114,4 @@ body {
 
 .footer .social {
     font-size: 1.7rem;
-}
-
-/* Images */
-
-/* stylelint-disable selector-no-qualifying-type */
-img[title=Me] {
-    width: 400px;
-}
-/* stylelint-enable selector-no-qualifying-type */
-
-img {
-    max-width: 100%;
 }

@@ -27,7 +27,7 @@
     box-shadow: 0.3em 0.3em 0 0 $background-2, inset 0 0 0 0 $background-2;
     transition: box-shadow 0.15s;
     border: 0.1em solid $background-2;
-    
+
     &:hover {
         box-shadow: 0 0 0 0 $background-2, inset 2em 2em 0 0 $background-2;
     }
