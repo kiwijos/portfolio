@@ -3,6 +3,18 @@ Title: Test
 Description: Page for testing
 ---
 
+Bildtest
+=========
+
+### Rödaktig ton
+![Sprintlopp](%base_url%/image/movement.jpg?w=400&f=colorize,50,0,0,0)
+
+### Inverterade färger
+![Sprintlopp](%base_url%/image/movement.jpg?w=400&f=negate)
+
+### Som en ritning
+![Sprintlopp](%base_url%/image/movement.jpg?w=400&convolve=draw)
+
 Typografitest
 =========
 
