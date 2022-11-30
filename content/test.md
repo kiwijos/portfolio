@@ -15,6 +15,10 @@ Bildtest
 ### Som en ritning
 ![Sprintlopp, som en ritning](%base_url%/image/movement.jpg?w=400&convolve=draw)
 
+### Bildkavlitet
+
+![Sprintlopp, som en ritning](%base_url%/image/movement.png?w=400&save-as=jpg&q=40)
+
 Typografitest
 =========
 
