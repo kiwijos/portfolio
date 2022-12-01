@@ -1,0 +1,21 @@
+.gallery {
+    display: grid;
+    max-width: 67rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.gallery > .embed-container {
+    grid-column: 1 / 4;
+}
+
+@media screen and (max-width: 555px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery > .embed-container {
+        grid-column: 1;
+    }
+}
