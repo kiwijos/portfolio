@@ -1,5 +1,5 @@
 ---
-Logo: image/logo.png
+Logo: image/logo.png?w=200&save-as=jpg&q=50&sharpen
 Tagline: My portfolio.
 Social:
     - title: Länk till sidans github-repo
