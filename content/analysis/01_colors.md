@@ -33,7 +33,7 @@ Frans Hals Museum
                 <td data-color="#f37449" style="background-color:#f37449;">
             </tr>
         </table>
-        <img src="%assets_url%/img/01_franshalsmuseum.png" alt="">
+        <img src="%assets_url%/img/01_franshalsmuseum.png" alt="Bild på Frans Hals Museums webbplats">
     </div>
     <div>
      <table class="color-table">
@@ -45,7 +45,7 @@ Frans Hals Museum
                 <td data-color="#f37449" style="background-color:#f37449;">
             </tr>
         </table>
-        <img src="%assets_url%/img/02_franshalsmuseum.png" alt="">
+        <img src="%assets_url%/img/02_franshalsmuseum.png" alt="Bild på Frans Hals Museums webbplats">
     </div>
 </div>
 
@@ -79,7 +79,7 @@ Smithsonian: National Museum of Natural History
                 <td data-color="#ffffff" style="background-color:#ffffff;">
             </tr>
         </table>
-        <img src="%assets_url%/img/01_naturalhistory.png" alt="">
+        <img src="%assets_url%/img/01_naturalhistory.png" alt="Bild på National Museum of Natural Historys webbplats">
     </div>
     <div>
      <table class="color-table">
@@ -91,7 +91,7 @@ Smithsonian: National Museum of Natural History
                 <td data-color="#ffffff" style="background-color:#ffffff;">
             </tr>
         </table>
-        <img src="%assets_url%/img/02_naturalhistory.png" alt="">
+        <img src="%assets_url%/img/02_naturalhistory.png" alt="Bild på National Museum of Natural Historys webbplats">
     </div>
 </div>
 
@@ -120,7 +120,7 @@ Smithsonian: National Air and Space Museum
                 <td data-color="#f4f0Eb" style="background-color:#f4f0Eb;">
             </tr>
         </table>
-        <img src="%assets_url%/img/01_airandspace.png" alt="">
+        <img src="%assets_url%/img/01_airandspace.png" alt="Bild på National Air and Space Museums webbplats">
     </div>
     <div>
      <table class="color-table">
@@ -132,7 +132,7 @@ Smithsonian: National Air and Space Museum
                 <td data-color="#ffffff" style="background-color:#ffffff;">
             </tr>
         </table>
-        <img src="%assets_url%/img/02_airandspace.png" alt="">
+        <img src="%assets_url%/img/02_airandspace.png" alt="Bild på National Air and Space Museums webbplats">
     </div>
 </div>
 

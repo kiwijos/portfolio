@@ -22,7 +22,7 @@ Resultat
 -----------------------
 
 <div class="embed-container">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ofQgiruvR4ALLAj2zrR9-Qvzfsm4zLOFKGbeOGLiaVnNLt9R-Cn4SWAs2Bn7a7AElEaKwRW7L36H/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2ofQgiruvR4ALLAj2zrR9-Qvzfsm4zLOFKGbeOGLiaVnNLt9R-Cn4SWAs2Bn7a7AElEaKwRW7L36H/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Tabell med resultat" frameborder="0"></iframe>
 </div>
 
 Frans Hals Museum
