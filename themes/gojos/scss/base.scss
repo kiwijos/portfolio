@@ -103,7 +103,7 @@ body {
 
 
 .footer a i {
-    padding: $magic-number / 4;
+    padding: calc($magic-number / 4);
 }
 
 /* Footer */
