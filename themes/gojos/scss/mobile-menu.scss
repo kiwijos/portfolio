@@ -3,29 +3,30 @@
     transition: height 0.5s ease-in !important;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 1em 0;
+    gap: $magic-number;
     list-style: none;
-}
-
-.nav ul li {
-    padding: 0 1em;
 }
 
 .nav-toggle {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 67rem) {
     .header {
         flex-direction: column;
     }
 
     .nav ul {
         flex-direction: column;
-        padding-bottom: 1em;
     }
 
     .nav ul li {
@@ -36,7 +37,6 @@
 
     .nav ul li a {
         display: block;
-        padding: 0.5em 0;
     }
 
     .js .nav-toggle {

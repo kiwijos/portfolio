@@ -4,7 +4,7 @@ body {
 
 ol,
 ul {
-    padding-left: 1.5em;
+    padding-left: $magic-number;
 }
 
 .hidden {
@@ -18,39 +18,19 @@ body {
 
 .header,
 .footer,
-.main,
-.article {
-    padding: $magic-number;
-}
-
-/* Placement */
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .main {
-    flex: 1 0 auto;
-}
-
-.article {
-    background-color: $background-3;
+    padding: $magic-number;
     max-width: 67rem;
     margin: 0 auto;
-}
-
-.header,
-.footer {
-    flex: 0 0 auto;
 }
 
 /* Header */
 
 .header {
+    border-bottom: 1px solid $font-color-3;
     display: flex;
     justify-content: space-between;
-    background-color: $background-3;
+    background-color: $background-1;
 }
 
 /* Nav */
@@ -90,28 +70,66 @@ body {
 
 /* Burger menu button and footer icons */
 
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a {
+    width: 80%;
+}
+
 .nav-toggle,
-.footer a {
-    color: $font-color-3;
-    transition: color 0.1s ease-in-out;
+.logo,
+.footer a i {
+    background-color: $font-color-3;
+    color: $background-1;
+    transition: background-color 0.1s ease-in-out;
 }
 
 .nav-toggle:hover,
-.footer a:hover {
-    color: $accent-2;
-    transition: color 0.1s ease-in-out;
+.logo:hover,
+.footer a:hover i {
+    background-color: $accent-1;
+}
+
+
+.footer a i {
+    padding: $magic-number / 4;
 }
 
 /* Footer */
 
 .footer {
+    border-top: 1px solid $font-color-3;
     display: flex;
-    justify-content: space-between;
-    background-color: $background-3;
+    flex-direction: column;
+    align-items: center;
+    gap: $magic-number;
+    background-color: $background-1;
     color: $font-color-3;
-    min-height: 200px;
 }
 
-.footer .social {
-    font-size: 1.7rem;
+.social {
+    display: flex;
+    gap: $magic-number;
+    font-size: 1.5rem;
+}
+
+$magic-width: 67rem + ($magic-number * 2);
+
+@media screen and (max-width: $magic-width) {
+    .footer,
+    .header {
+        padding: $magic-number 0;
+        margin: 0 $magic-number;
+    }
 }

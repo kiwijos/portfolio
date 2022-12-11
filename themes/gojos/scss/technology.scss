@@ -4,7 +4,7 @@
 
 .side-bar-col {
     width: calc((100%/6));
-    padding-right: $magic-number;
+    padding-right: $magic-number * 2;
 
     ul {
         list-style: none;
@@ -12,11 +12,11 @@
     }
 
     .active {
-        box-shadow: 0 0 0 0 $background-2, inset 2em 2em 0 0 $background-2;
+        box-shadow: 0 0 0 0 $font-color-3, inset 2em 2em 0 0 $font-color-3;
     }
 
     .active a {
-        color: $font-color-1;
+        color: $background-1;
     }
 }
 
@@ -24,12 +24,12 @@
     background-color: transparent;
     margin-bottom: $magic-number;
     border-radius: $base-border-radius;
-    box-shadow: 0.3em 0.3em 0 0 $background-2, inset 0 0 0 0 $background-2;
+    box-shadow: 0.3em 0.3em 0 0 $font-color-3, inset 0 0 0 0 $font-color-3;
     transition: box-shadow 0.15s;
-    border: 0.1em solid $background-2;
+    border: 0.1em solid $font-color-3;
 
     &:hover {
-        box-shadow: 0 0 0 0 $background-2, inset 2em 2em 0 0 $background-2;
+        box-shadow: 0 0 0 0 $font-color-3, inset 2em 2em 0 0 $font-color-3;
     }
 
     a {
@@ -41,7 +41,7 @@
     }
 
     &:hover a {
-        color: $font-color-1;
+        color: $background-1;
     }
 }
 

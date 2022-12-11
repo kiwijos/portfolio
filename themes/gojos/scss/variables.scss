@@ -1,8 +1,9 @@
-$background-1: #a1bacf;
+$background-1: #fffffa;
 $background-2: #e0f1ff;
 $background-3: #fffffa;
 $background-4: #e0f1ff;
 
+// #a1bacf;
 $accent-1: #4f4242;
 $accent-2: #cfa3a1;
 
@@ -16,3 +17,7 @@ $base-border-radius: 4px;
 $base-font-size: 1rem;
 $base-line-height: 1.4;
 $magic-number: $base-font-size * $base-line-height;
+
+.logo img {
+    filter: invert(100%) sepia(22%) saturate(533%) hue-rotate(355deg) brightness(104%) contrast(103%);
+}

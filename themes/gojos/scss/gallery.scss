@@ -2,7 +2,7 @@
     display: grid;
     max-width: 67rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: $magic-number;
     margin: 0 auto;
 }
 
