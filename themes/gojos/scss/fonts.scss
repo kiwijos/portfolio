@@ -9,15 +9,23 @@
     font-style: normal;
 }
 
+/*
 @font-face {
     font-family: 'vera mono';
     src: url('../../shared/fonts/veramono-webfont.woff2') format('woff2'), url('../../shared/fonts/veramono-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'firasans book';
+    src: url('../../shared/fonts/firasans-book-webfont.woff2') format('woff2'), url('../../shared/fonts/firasans-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-    font-family: 'vera mono', monospace;
+    font-family: 'montserrat regular', sans-serif;
 }
 
 h1,
@@ -26,5 +34,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'montserrat regular', sans-serif;
+    font-family: 'firasans book', monospace;
 }
