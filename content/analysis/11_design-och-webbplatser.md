@@ -48,7 +48,7 @@ Resultat
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vReCloCxNJIlWbOCVYc33EVy_gGoo42oAG8U0e2Z4YyHR8qnuZ1vkDGdnktj2JCmlzDiH3sfUtDfJ3k/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="Tabell med resultat" frameborder="0"></iframe>
 </div>
 
-Förstasidan laddar snabbast i mitt eget test. Vilket inte är speciellt förvånande då det är minst resurser som läses in. Det ger ett gott första intryck som bidrar till en god användarupplevelse överlag. Alla sidor får godkänt på både mobil och desktop av Pagespeed insights test av viktiga webbvärden. Saker man gör bra är att väla rätt storlek på bilder bland annat. De främsta förbättringsförslagen är att välja moderna bildformat som WebP och AVIF och att ta bort resurser som blockerar renderingen.
+Förstasidan laddar snabbast i mitt eget test. Vilket inte är speciellt förvånande då det är minst resurser som läses in. Det ger ett gott första intryck som bidrar till en god användarupplevelse överlag. Alla sidor får godkänt på både mobil och desktop av Pagespeed insights test av viktiga webbvärden. Saker man gör bra är att välja rätt storlek på bilder bland annat. De främsta förbättringsförslagen är att välja moderna bildformat som WebP och AVIF och att ta bort resurser som blockerar renderingen.
 
 Analys
 -----------------------
